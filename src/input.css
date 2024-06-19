@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    user-select: none;
+}
+
+.cloack span{
+    @apply absolute text-white inset-5 text-center rotate-calc;
+}
+
+.cloack span b{
+    @apply rotate-calc2 inline-block;
+}
+
+.circle{
+    @apply absolute md:w-[300px] md:h-[300px] w-[240px] h-[240px] border-slate-50 border-[2px] rounded-full  border-opacity-10 flex justify-center items-center before:absolute  md:before:w-3 md:before:h-3 before:w-2 before:h-2  before:inset-[0_auto_0_auto] md:before:-top-[6px] before:-top-[5px] before:rounded-full before:shadow-[0px_0px_10px];
+}
+
+
+.circle1{
+    @apply md:w-[250px] md:h-[250px] w-[200px] h-[200px] ;
+}
+
+.circle2{
+    @apply md:w-[200px] md:h-[200px] w-[160px] h-[160px] ;
+}
+
+.circle i{
+    @apply absolute h-[50%] bottom-[50%] rounded-full scale-y-[0.89] origin-bottom ;
+}

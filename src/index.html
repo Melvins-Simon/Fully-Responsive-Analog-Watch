@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Melvins Simon Omari_@XENIEX-Technologies_KE">
+    <meta name="description" content="Just a Fun Code of Analogue and Digita cloack with TailwindCSS HTML & JS 😊">
+    <title>Analogue || Digital Watches with JS Date Function</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-[#012345] relative h-screen w-screen flex justify-center items-center ">
+
+    <div class="relative bg-[#012345] rounded-[50%] shadow-[0px_0px_20px] shadow-black flex flex-col justify-between items-center  pt-12">
+        <div class="relative cloack md-[#012345] bg-black md:h-[450px] md:w-[450px] w-[370px] h-[370px] shadow-[0px_0px_20px] shadow-black rounded-full flex justify-center items-center before:absolute before:contents-[''] before:h-4 before:w-4 before:bg-[#012345] before:border-[2px] before:rounded-full before:z-50">
+
+            <span  style="--i:1 "><b class="text-3xl font-bold opacity-90 animate-pulse ">1</b></span>
+            <span  style="--i:2 "><b class="text-3xl font-bold opacity-90 animate-pulse ">2</b></span>
+            <span  style="--i:3 "><b class="text-3xl font-bold opacity-90 animate-pulse ">3</b></span>
+            <span  style="--i:4 "><b class="text-3xl font-bold opacity-90 animate-pulse ">4</b></span>
+            <span  style="--i:5 "><b class="text-3xl font-bold opacity-90 animate-pulse ">5</b></span>
+            <span  style="--i:6 "><b class="text-3xl font-bold opacity-90 animate-pulse ">6</b></span>
+            <span  style="--i:7 "><b class="text-3xl font-bold opacity-90 animate-pulse ">7</b></span>
+            <span  style="--i:8 "><b class="text-3xl font-bold opacity-90 animate-pulse ">8</b></span>
+            <span  style="--i:9 "><b class="text-3xl font-bold opacity-90 animate-pulse ">9</b></span>
+            <span  style="--i:10"><b class="text-3xl font-bold opacity-90 animate-pulse ">10</b></span>
+            <span  style="--i:11"><b class="text-3xl font-bold opacity-90 animate-pulse ">11</b></span>
+            <span  style="--i:12"><b class="text-3xl font-bold opacity-90 animate-pulse ">12</b></span>
+
+            <div id="sec" class="circle z-30 circlef before:bg-[hsl(0,0%,100%)] before:shadow-[hsl(0,0%,100%)]" >
+                
+                <i  class="bg-[hsl(0,0%,70%)]  w-[2px] rounded-t-full"></i>
+            </div>
+
+            <div id="min" class="circle z-20 circle1 before:bg-[hsl(148,100%,50%)] before:shadow-[hsl(148,100%,50%)]" >
+                <i  class="bg-[hsl(148,100%,20%)] w-[5px] rounded-t-full"></i>
+            </div>
+
+            <div id="hr" class="circle z-10 circle2 before:bg-[hsl(0,100%,50%)] before:shadow-[hsl(0,100%,50%)]" >
+                <i  class="bg-[hsl(0,100%,20%)] w-[7px]  rounded-t-full "></i>
+            </div>  
+            
+            <div class="absolute z-0 bottom-[60%] h-max w-max md:text-sm text-[0.75rem] bg-gradient-to-r from-[#3700ff] via-slate-200 to-[#ff0000] text-transparent bg-clip-text flex flex-col justify-center items-center animate-pulse"> <i class="md:text-sm text-[0.75rem] font-bold w-max px-1 bg-gradient-to-r from-[#3700ff] via-slate-200 to-[#00ff75] text-transparent bg-clip-text animate-bounce">XENIEX</i> Technologies</div>
+        </div>
+
+        <div class="absolute w-max h-max bg-[#012345] shadow-[0px_0px_5px] shadow-black top-3 font-bold px-4 py-1 rounded-full">
+            <span id="hrs" class=" opacity-70 text-[#ff0000]">00</span>
+            <span class=" opacity-70 text-white">:</span>
+            <span id="mts" class=" opacity-70 text-[#00ff75]">00</span>
+            <span class=" opacity-70 text-white">:</span>
+            <span id="secs" class=" opacity-70 text-[#ffffff]">00</span>
+            <span id="pms" class=" opacity-70 text-white text-[0.7rem]">AM</span>
+            
+        </div>
+        
+    </div>
+
+    <div class="absolute top-1 left-12 h-max w-max">
+        <p class="inline-block text-5xl">⏰</p>
+        <span id="text-auto" class="bg-gradient-to-r from-amber-900 via-orange-400  to-white text-transparent bg-clip-text font-bold font-mono"></span>
+        <p class="inline-block text-xl">😇 </p>
+    </div>
+
+    
+    <script src="main.js"></script>
+    <script src="autotext.js"></script>
+</body>
+</html>
