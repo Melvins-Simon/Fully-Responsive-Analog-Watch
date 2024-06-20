@@ -16,16 +16,16 @@
 }
 
 .circle{
-    @apply absolute md:w-[300px] md:h-[300px] w-[240px] h-[240px] border-slate-50 border-[2px] rounded-full  border-opacity-10 flex justify-center items-center before:absolute  md:before:w-3 md:before:h-3 before:w-2 before:h-2  before:inset-[0_auto_0_auto] md:before:-top-[6px] before:-top-[5px] before:rounded-full before:shadow-[0px_0px_10px];
+    @apply absolute md:w-[300px] md:h-[300px] w-[240px] h-[240px] border-slate-50 border-[2px] rounded-full  border-opacity-15 flex justify-center items-center before:absolute  md:before:w-3 md:before:h-3 before:w-2 before:h-2  before:inset-[0_auto_0_auto] md:before:-top-[6px] before:-top-[5px] before:rounded-full before:shadow-[0px_0px_10px] before:border before:border-[hsl(0,100%,100%)];
 }
 
 
 .circle1{
-    @apply md:w-[250px] md:h-[250px] w-[200px] h-[200px] ;
+    @apply md:w-[250px] md:h-[250px] border-[#00ff75] border-opacity-15 w-[200px] h-[200px] before:border before:border-[hsl(125,100%,50%)] ;
 }
 
 .circle2{
-    @apply md:w-[200px] md:h-[200px] w-[160px] h-[160px] ;
+    @apply md:w-[200px] md:h-[200px] border-[#ff0000] border-opacity-15 w-[160px] h-[160px] before:border-[hsl(0,100%,50%)];
 }
 
 .circle i{

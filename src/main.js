@@ -13,24 +13,26 @@ setInterval(() =>{
 
     // Analog Watch
     const day = new Date();
-    let hh1 = (day.getHours()-12) *30;
+    let hh1 = day.getHours();
+    hh1 = (hh1 >12) ? (hh1-=12)*30 : hh1*30;   
     let mm2 = day.getMinutes() * 6;
     let ss3 = (day.getSeconds() * 6);
     let ms = day.getMilliseconds();
     
     hr.style.rotate  =  `${hh1+(mm2/12)}deg`;
     min.style.rotate =  `${mm2+(ss3/60)}deg`;
-    sec.style.rotate =  `${ss3+(ms/166.666666666666666)}deg`;
+    sec.style.rotate =  `${ss3+(ms/166.6666666666666666)}deg`;
 
     // Digital Watch
-    let dh = day.getHours()-12;
+    let dh = day.getHours();
+    dh = (dh >12) ? (dh-=12) : dh;  
     let dm = day.getMinutes();
-    let ds = day.getSeconds();
-
+    let ds = day.getSeconds();    
+   
     // Appendind 0 to single digits
-    dh = dh <10 ? "0"+dh : dh;
-    dm = dm <10 ? "0"+dm : dm;
-    ds = ds <10 ? "0"+ds : ds;
+    dh = (dh <10) ? ("0"+dh) : dh;
+    dm = (dm <10) ? ("0"+dm) : dm;
+    ds = (ds <10) ? ("0"+ds) : ds;
 
     if(day.getHours() > 12){
          pms.textContent = `PM`;
